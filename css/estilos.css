@@ -1,0 +1,170 @@
+h1{
+	text-align: center;
+}
+
+body{
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+	margin: 0;
+
+}
+
+header {
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+}
+
+main{
+	padding-top: 100px;
+	display: flex;
+	width:60%;
+	height:60vh;
+	margin:0 auto;
+}
+
+div.tablero, div.bolas{
+	height: 100%;
+}
+
+div.tablero{
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	flex:9;
+	background-color: rgba(243,241,241,0.5);
+}
+
+div.bolas{
+	flex:1;
+}
+
+div.bolasGrandes, div.resultado{
+	background-color: #a4a4a4;
+	box-shadow: 0 0 5px black;
+	border:1px solid black;
+	border-radius: 50%;
+	padding:10px;
+}
+
+div.bolasGrandes{
+	cursor: pointer;
+	margin: 0 3%;
+	width: 25%;
+	height: 60%;
+    transition: background-color 800ms linear;
+}
+
+div.resultado{
+	margin: 0 2%;
+	width: 10%;
+	height: 20%;
+}
+
+div.bolas > div{
+	box-shadow: 0 0 5px black;
+	border:1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 10% auto;
+	width: 60%;
+	height: 8%;
+}
+
+div.rojo{
+	background-color: red;
+}
+
+div.blanco{
+	background-color: white;
+}
+
+div.negra{
+	background-color: black;
+}
+
+div.amarilla{
+	background-color: yellow;
+}
+
+div.naranja{
+	background-color: orange;
+}
+
+div.marron{
+	background-color: brown;
+}
+
+div.azul{
+	background-color: blue;
+}
+
+div.verde{
+	background-color: green;
+}
+
+div.rojo, div.blanco, div.negra, div.amarilla, div.naranja, div.marron, div.azul, div.verde{
+	transition: background-color 800ms linear;
+}
+
+img#check{
+	margin: 100% auto 0 auto ;
+	width: 60%;
+	height: 15%;
+	cursor: pointer;
+}
+
+
+div#tablero > div{
+	margin:0 auto;
+	width:80%;
+	height:10vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+img.colocar{
+	margin:5px;
+	width:50px;
+}
+
+img.aciertos{
+	margin:5px;
+	width:25px;
+}
+
+#check{
+	display: none;
+}
+
+button{
+	margin: 0 auto;
+	width:40%;
+	height:50%;
+	font-size: 18px;
+}
+
+div.ganador{
+	position: relative;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+div.dialogo{
+    display: none;
+}
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}

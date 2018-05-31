@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>MasterMind</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/mastermind.js"></script>
+	<script type="text/javascript" src="js/gui.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Mastermind JQuery</h1>
+	</header>
+	<main>
+		<div class="tablero">
+			<div id="tablero"></div>	
+		</div>
+		<div class="bolas">
+			<div class="rojo" id="rojo" name="boton"></div>
+			<div class="blanco" id="blanco" name="boton"></div>
+			<div class="negra" id="negra" name="boton"></div>
+			<div class="amarilla" id="amarilla" name="boton"></div>
+			<div class="naranja"  id="naranja" name="boton"></div>
+			<div class="marron"  id="marron" name="boton"></div>
+			<div class="azul"  id="azul" name="boton"></div>
+			<div class="verde"  id="verde" name="boton"></div>
+			<img src="img/check.svg"  id="check"  alt="check" />
+			
+			<div id="dialog-confirm" class="dialogo" title="¡Has ganado!">
+				<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>¿Jugar de nuevo?</p>
+			</div>		
+		</div>
+	</main>
+	<footer>
+		<h2>Diseño por Victoriano Sevillano Vega</h2>
+	</footer>
+</body>
+</html>
